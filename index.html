@@ -8,6 +8,66 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="http://yandex.st/bootstrap/3.0.0/css/bootstrap.min.css">
 
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#all').click(function(){
+			$('.teacher_card').fadeTo('slow', 1);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+		$('#vocal').click(function(){
+			$('.teacher_card').fadeTo('fast', 1);
+			$('.teacher_card:not(.vocal)').fadeTo('slow',0.3);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+		$('#guitar').click(function(){
+			$('.teacher_card').fadeTo('fast', 1);
+			$('.teacher_card:not(.guitar)').fadeTo('slow',0.3);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+		$('#electroguitar').click(function(){
+			$('.teacher_card').fadeTo('fast', 1);
+			$('.teacher_card:not(.electroguitar)').fadeTo('slow',0.3);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+		$('#fno').click(function(){
+			$('.teacher_card').fadeTo('fast', 1);
+			$('.teacher_card:not(.fno)').fadeTo('slow',0.3);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+		$('#skripka').click(function(){
+			$('.teacher_card').fadeTo('fast', 1);
+			$('.teacher_card:not(.skripka)').fadeTo('slow',0.3);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+		$('#saks').click(function(){
+			$('.teacher_card').fadeTo('fast', 1);
+			$('.teacher_card:not(.saks)').fadeTo('slow',0.3);
+			$('menu a').each(function(){
+				$(this).removeClass('menuIn');
+			});
+			$(this).addClass('menuIn');
+		});
+	})
+</script>
+
 <style type="text/css">
 	@import "http://webfonts.ru/import/oranienbaum.css";
 	@import "http://webfonts.ru/import/roboto.css";
@@ -17,10 +77,14 @@
 	body {
 		font-family: 'PT Serif', serif;
 		background-color: #fff;
+		background-image: url(http://majorschool.ru/background.jpg);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 		padding: 0px 0px 0 0;
 	}
 
 	a {
+		color: #197FFF;
 		border-bottom-color: #83D1FF;
 		border-bottom-style: solid;
 		border-bottom-width: 1px;
@@ -37,6 +101,10 @@
 		top: 40px;
 		right: 70px;
 		*visibility: hidden;
+	}
+	.phone_number {
+		position: relative;
+		left: -7px;
 	}
 
 	.logo {
@@ -81,6 +149,13 @@
 		border-bottom-width: 1px;
 		cursor: pointer;
 	}
+	
+	.menuIn {
+		color:black; 
+		background-color:#FFF8C3;
+		border-bottom-style:none;
+	}
+
 	menu a:hover {
 		text-decoration: none;
 	}
@@ -105,7 +180,7 @@
 	.teacher_extra {}
 
 	.fno {}
-	.vokal {}
+	.vocal {}
 	.saks {}
 	.guitar {}
 	.skripka {}
@@ -116,7 +191,7 @@
 		color: #000;
 		font-size: 18px;
 		font-weight: 400;
-		line-height: 1.5em;
+		line-height: 1.3em;
 		letter-spacing: 0em;
 		text-indent: 0em;
 		margin: 60px 0 0 0%;
@@ -125,7 +200,7 @@
 
 	}
 	.info p {
-		line-height: 2em;
+		line-height: 1.8em;
 	}
 	.features {
 		*line-height: 1.5em;
@@ -133,9 +208,11 @@
 		margin-left: -38px;
 	}
 	.detail {
+		display: block;
 		font-family: 'Roboto Slab', serif;
 		font-weight: 400; 
 		font-size: 12px;
+		margin-bottom: 10px;
 
 	}
 	footer {
@@ -150,8 +227,8 @@
 <title>Школа музыки для взрослых и детей «Мажор»</title>
 </head>
 <body>
-<div class="contacts">Эл. почта: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, <br>
-	Телефон: +7&nbsp;915&nbsp;399-99-49</div>
+<div class="contacts"><span class="phone_number">+7&nbsp;915&nbsp;399-99-49,</span><br><a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>
+	</div>
 <header class="logo">МАЖОР<span class="logo_comment">школа музыки для взрослых и детей</span></header>
 <section class="teachers">
 	<div>Наши преподаватели:
@@ -168,16 +245,16 @@
 	<div class="teacher_card fno">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_chernovskaja.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Катя Черновская,</span> 
+			<span class="teacher_name">Катя Черновская</span> 
 			<span class="teacher_instr">фортепиано,</span> 
 			<span class="teacher_educ">академия им. Маймонида.</span> <br>
 			<span class="teacher_extra">Лауреат международных конкурсов.</span>
 		</div>
 	</div>
-	<div class="teacher_card vokal">
+	<div class="teacher_card vocal">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_nomer.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Лена Номеровская,</span> 
+			<span class="teacher_name">Лена Номеровская</span> 
 			<span class="teacher_instr">вокал</span>, 
 			<span class="teacher_educ">ГМПИ им. Ипполитова-Иванова</span>
 			<span class="teacher_extra"></span>
@@ -186,7 +263,7 @@
 	<div class="teacher_card saks">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_maslov.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Костя Маслов,</span> 
+			<span class="teacher_name">Костя Маслов</span> 
 			<span class="teacher_instr">саксофон,</span> 
 			<span class="teacher_educ">Российская академия музыки им. Гнесиных</span>
 			<span class="teacher_extra"></span>
@@ -195,7 +272,7 @@
 	<div class="teacher_card guitar">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_natalya-karpenkonasajt.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Наташа Карпенко,</span> 
+			<span class="teacher_name">Наташа Карпенко</span> 
 			<span class="teacher_instr">гитара,</span> 
 			<span class="teacher_educ">Санкт-Петербургский государственный университет культуры и искусств</span>
 			<span class="teacher_extra"></span>
@@ -204,7 +281,7 @@
 	<div class="teacher_card fno">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_fedorova.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Лена Федорова,</span> 
+			<span class="teacher_name">Лена Федорова</span> 
 			<span class="teacher_instr">фортепиано,</span> 
 			<span class="teacher_educ">Уральская государственная консерватория им. Мусоргского</span>
 			<span class="teacher_extra"></span>
@@ -213,7 +290,7 @@
 	<div class="teacher_card skripka">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_roza.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Роза Ли,</span> 
+			<span class="teacher_name">Роза Ли</span> 
 			<span class="teacher_instr">скрипка,</span> 
 			<span class="teacher_educ">Новосибирская государственная консерватория имени М. И. Глинки</span>
 			<span class="teacher_extra"></span>
@@ -222,17 +299,17 @@
 	<div class="teacher_card electroguitar guitar">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_bagrintsev.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Олег Багринцев,</span> 
+			<span class="teacher_name">Олег Багринцев</span> 
 			<span class="teacher_instr">электрогитара,</span> 
 			<span class="teacher_instr">гитара,</span> 
 			<span class="teacher_educ">Краснодарский государственный университет культуры и искусств</span>
 			<span class="teacher_extra"></span>
 		</div>
 	</div>
-	<div class="teacher_card vokal">
+	<div class="teacher_card vocal">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_razdoburina.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Лена Раздобурдина,</span> 
+			<span class="teacher_name">Лена Раздобурдина</span> 
 			<span class="teacher_instr">вокал,</span> 
 			<span class="teacher_educ">Московская государственная консерватория имени П. И. Чайковского</span>
 			<span class="teacher_extra"></span>
@@ -241,16 +318,16 @@
 	<div class="teacher_card guitar">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/ermolaeva.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Алена Ермолаева,</span> 
+			<span class="teacher_name">Алена Ермолаева</span> 
 			<span class="teacher_instr">гитара,</span> 
 			<span class="teacher_educ">Белгородский государственный институт культуры и искусств</span>
 			<span class="teacher_extra"></span>
 		</div>
 	</div>
-	<div class="teacher_card vokal">
+	<div class="teacher_card vocal">
 		<img class="teacher_foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_bril.jpg" alt="">
 		<div class="teacher_info">
-			<span class="teacher_name">Катя Бриль,</span> 
+			<span class="teacher_name">Катя Бриль</span> 
 			<span class="teacher_instr">вокал,</span> 
 			<span class="teacher_educ">ГМПИ им. Ипполитова-Иванова</span>
 			<span class="teacher_extra"></span>
@@ -260,28 +337,28 @@
 <section class="info">
 	<p>
 	Если вы когда-нибудь хотели научиться петь или играть на любимом музыкальном инструменте — мы научим вас, даже если раньше вы этим никогда не занимались! А если вы уже что-то умеете, мы поможем вам усовершенствовать навыки!</p>
-	<p style="text-indent: 40px;">
+	<p>
 	Все наши педагоги — молодые и талантливые музыканты, дипломированные специалисты с большим опытом игры на сцене и преподавания.</p>
 	<div class="features">
 	<ul>
 		Особенности нашей школы:<br>
-		<li>Работаем в удобное для вас время <br>
+		<li>Работаем в удобное для вас время
 			<span class="detail">Мы работаем ежедневно, без выходных, с утра до позднего вечера. Количество и время занятий выбирается, исходя из ваших пожеланий;</span>
-		<li>Занятия в удобном для вас месте<br>
+		<li>Занятия в удобном для вас месте
 			<span class="detail">Вы можете заниматься с педагогом у нас в школе, дома у педагога, у себя на дому, либо в отдельной студии;</span>
-		<li>Научим играть и петь любую музыку<br>
+		<li>Научим играть и петь любую музыку
 			<span class="detail">Репертуар, который играют наши ученики, очень разнообразен — от музыки, которую мы постоянно слышим по радио и в кино, до шедевров мировой классики и джаза.</span>
-		<li>Репетиторство для учащихся музыкальных школ<br>
+		<li>Репетиторство для учащихся музыкальных школ
 			<span class="detail">Если ваш ребёнок учится в музыкальной школе, и вам требуется репетитор для домашней работы — мы подберем вам педагога. Также мы помогаем поступать в музыкальные училища и вузы.</span>
-		<li>Помощь в приготовлении музыкального сюрприза<br>
+		<li>Помощь в приготовлении музыкального сюрприза
 			<span class="detail">Если вы хотите удивить своих близких — сделать музыкальный подарок на день рождения, сыграть или спеть им любимую песню, мы научим вас этому за короткий срок!</span>
 	</ul>
 	</div>
-	<p>Свяжитесь с нами для записи на пробное занятие: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, телефон:&nbsp;+7&nbsp;915&nbsp;399-99-49</p>
+	<p>Свяжитесь с нами для записи на пробное занятие по телефону &nbsp;+7&nbsp;915&nbsp;399-99-49 или электронной почте&nbsp;<a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a></p>
 </section>
 <footer>
-	Электронная почта: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, <br>
 	Телефон: +7&nbsp;915&nbsp;399-99-49 <br>
+	Электронная почта: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, <br>
 	© 2013 Школа музыки для взрослых и детей «Мажор»
 </footer>
 </body>
