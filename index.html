@@ -2,53 +2,285 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<script type="text/javascript" src="http://yandex.st/jquery/2.0.0/jquery.js"></script>
+<script type="text/javascript" src="http://yandex.st/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://yandex.st/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="http://yandex.st/bootstrap/3.0.0/css/bootstrap.min.css">
+
 <style type="text/css">
-	.rr {
-		width: 600px;
+	@import "http://webfonts.ru/import/oranienbaum.css";
+	@import "http://webfonts.ru/import/roboto.css";
+	@import "http://webfonts.ru/import/ptserif.css";
+	@import "http://webfonts.ru/import/ptsans.css";
+
+	body {
+		font-family: 'PT Serif', serif;
+		background-color: #fff;
+		padding: 0px 0px 0 0;
 	}
 
+	a {
+		border-bottom-color: #83D1FF;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+	}
+
+	a:hover {		
+		text-decoration: none;
+	}
+
+	.contacts {
+		position: absolute;
+		font-family: 'Roboto Slab', serif;
+		font-size: 12px;
+		top: 84px;
+		right: 70px;
+		*visibility: hidden;
+	}
+
+	.logo {
+		font-family: Oranienbaum;
+		font-size: 48px;
+		*font-weight: 600;
+		letter-spacing: 0.4em;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	.logo_comment{
+		display: block;
+		font-size: 16px;
+		letter-spacing: 0.2em;
+	}
+
+	.teachers {
+		font-family: 'PT Serif', serif;
+		font-size: 16px;
+		width: 52%;
+		display: inline-block;
+		float: left;
+		margin: 20px 20px 0 50px;
+
+	}
+
+	menu {
+		margin: 10px 0 10px 0;
+		padding: 0;
+	}
+
+	menu li {
+		display: inline-block;
+		margin: 0 5% 0 0;
+	}
+
+	menu a {
+		border-bottom-color: #008ACE;
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+		cursor: pointer;
+	}
+	menu a:hover {
+		text-decoration: none;
+	}
+
+	.card {
+		width: 150px;
+		height: 300px;
+		margin: 10px 20px 10px 0;
+		float: left;
+	}
+
+	.foto {
+		width: 150px;
+		*height: 150px;
+	}
+
+	.teacher_info {margin:5px 0 0 0; font-size: 14px;}
+
+	.teacher_name {display: block; margin: 0 0 5px 0; font-size: 14px;}
+	.teacher_instr {font-style: italic;}
+	.teacher_educ {}
+	.teacher_extra {font-size: 12px;}
+
+	.fno {}
+	.vokal {}
+	.saks {}
+	.guitar {}
+	.skripka {}
+	.electroguitar {}
+
+	.info {
+		font-family: 'Roboto Slab', serif; 
+		color: #000;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.5em;
+		letter-spacing: 0em;
+		text-indent: 0em;
+		margin: 50px 0 0 0%;
+		width: 500px;
+		display: inline-block;
+
+	}
+	.detail {
+		font-family: 'Roboto Slab', serif;
+		font-weight: 400; 
+		font-size: 14px;
+
+	}
+	footer {
+		font-family: 'Roboto Slab', serif; 
+		font-size: 12px;
+		font-weight: 400;
+		color: #000;
+		margin: 20px 0 20px 50px;
+		width: 500px;
+	}
 </style>
 <title>Школа музыки для взрослых и детей «Мажор»</title>
 </head>
 <body>
-<div class="rr">
-<p>
-Если вы когда-нибудь хотели научиться петь или играть на любимом музыкальном инструменте - мы научим вас, даже если раньше вы этим никогда не занимались! А если вы уже что-то умеете, мы поможем вам усовершенствовать навыки!
-<p>
-Все наши педагоги - молодые и талантливые музыканты, дипломированные специалисты с большим опытом игры на сцене и преподавания.
-<p>
-Особенности нашей школы:
-<p>
-- Работаем в удобное для вас время <br>
-Мы работаем ежедневно, без выходных, с утра до позднего вечера. Количество и время занятий выбирается, исходя из ваших пожеланий;
-<p>
-- Занятия в удобном для вас месте<br>
-Вы можете заниматься с педагогом у нас в школе, дома у педагога, у себя на дому, либо в отдельной студии;
-<p>
-- Научим играть и петь любую музыку<br>
-Репертуар, который играют наши ученики, очень разнообразен - от музыки, которую мы постоянно слышим по радио и в кино, до шедевров мировой классики и джаза.
-<p>
-- Репетиторство для учащихся музыкальных школ<br>
-Если ваш ребёнок учится в музыкальной школе, и вам требуется репетитор для домашней работы - мы подберем вам педагога. Также мы помогаем поступать в музыкальные училища и ВУЗы.
-<p>
-- Помощь в приготовлении музыкального сюрприза<br>
-Если вы хотите удивить своих близких - сделать музыкальный подарок на день рождения, сыграть или спеть им любимую песню, мы научим вас этому за короткий срок!
-<p>
-Свяжитесь с нами для записи на пробное занятие: mail@majorschool.ru или +7 (915) 399 99 49
-</div>
+<div class="contacts">Эл. почта: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, <br>
+	Телефон: +7&nbsp;915&nbsp;399-99-49</div>
+<header class="logo">МАЖОР<span class="logo_comment">школа музыки для взрослых и детей</span></header>
+<section class="teachers">Наши преподаватели:
+	<menu>
+		<li><a id="all">Все</a>
+		<li><a id="vocal">Вокал</a>
+		<li><a id="guitar">Гитара</a>
+		<li><a id="electroguitar">Электрогитара</a>
+		<li><a id="fno">Фортепиано</a>
+		<li><a id="skripka">Скрипка</a>
+		<li><a id="saks">Саксофон</a>
+	</menu>
+	<div class="card fno">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_chernovskaja.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Катя Черновская,</span> 
+			<span class="teacher_instr">фортепиано,</span> 
+			<span class="teacher_educ">академия им. Маймонида.</span> <br>
+			<span class="teacher_extra">Лауреат международных конкурсов.</span>
+		</div>
+	</div>
+	<div class="card vokal">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_nomer.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Лена Номеровская,</span> 
+			<span class="teacher_instr">вокал</span>, 
+			<span class="teacher_educ">ГМПИ им. Ипполитова-Иванова</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card saks">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_maslov.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Костя Маслов,</span> 
+			<span class="teacher_instr">саксофон,</span> 
+			<span class="teacher_educ">Российская академия музыки им. Гнесиных</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card guitar">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_natalya-karpenkonasajt.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Наташа Карпенко,</span> 
+			<span class="teacher_instr">гитара,</span> 
+			<span class="teacher_educ">Санкт-Петербургский государственный университет культуры и искусств</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card fno">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_fedorova.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Лена Федорова,</span> 
+			<span class="teacher_instr">фортепиано,</span> 
+			<span class="teacher_educ">Уральская государственная консерватория им. Мусоргского</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card skripka">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_roza.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Роза Ли,</span> 
+			<span class="teacher_instr">скрипка,</span> 
+			<span class="teacher_educ">Новосибирская государственная консерватория имени М. И. Глинки</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card electroguitar guitar">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_bagrintsev.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Олег Багринцев,</span> 
+			<span class="teacher_instr">электрогитара,</span> 
+			<span class="teacher_instr">гитара,</span> 
+			<span class="teacher_educ">Краснодарский государственный университет культуры и искусств</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card vokal">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_razdoburina.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Лена Раздобурдина,</span> 
+			<span class="teacher_instr">вокал,</span> 
+			<span class="teacher_educ">Московская государственная консерватория имени П. И. Чайковского</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card guitar">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/ermolaeva.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Алена Ермолаева,</span> 
+			<span class="teacher_instr">гитара,</span> 
+			<span class="teacher_educ">Белгородский государственный институт культуры и искусств</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+	<div class="card vokal">
+		<img class="foto" src="http://forte-music.ru/wp-content/themes/forte/images/th_bril.jpg" alt="">
+		<div class="teacher_info">
+			<span class="teacher_name">Катя Бриль,</span> 
+			<span class="teacher_instr">вокал,</span> 
+			<span class="teacher_educ">ГМПИ им. Ипполитова-Иванова</span>
+			<span class="teacher_extra"></span>
+		</div>
+	</div>
+</section>
+<section class="info">
+	<p>
+	Если вы когда-нибудь хотели научиться петь или играть на любимом музыкальном инструменте — мы научим вас, даже если раньше вы этим никогда не занимались! А если вы уже что-то умеете, мы поможем вам усовершенствовать навыки!
+	<p>
+	Все наши педагоги — молодые и талантливые музыканты, дипломированные специалисты с большим опытом игры на сцене и преподавания.
+	<p>
+	<ul>
+	Особенности нашей школы:<br>
+	<li>Работаем в удобное для вас время <br>
+	<span class="detail">Мы работаем ежедневно, без выходных, с утра до позднего вечера. Количество и время занятий выбирается, исходя из ваших пожеланий;</span>
+	<li>Занятия в удобном для вас месте<br>
+	<span class="detail">Вы можете заниматься с педагогом у нас в школе, дома у педагога, у себя на дому, либо в отдельной студии;</span>
+	<li>Научим играть и петь любую музыку<br>
+	<span class="detail">Репертуар, который играют наши ученики, очень разнообразен — от музыки, которую мы постоянно слышим по рад-ио и в кино, до шедевров мировой классики и джаза.</span>
+	<li>Репетиторство для учащихся музыкальных школ<br>
+	<span class="detail">Если ваш ребёнок учится в музыкальной школе, и вам требуется репетитор для домашней работы — мы подберем вам педагога. Также мы помогаем поступать в музыкальные училища и вузы.</span>
+	<li>Помощь в приготовлении музыкального сюрприза<br>
+	<span class="detail">Если вы хотите удивить своих близких — сделать музыкальный подарок на день рождения, сыграть или спеть им любимую песню, мы научим вас этому за короткий срок!</span>
+	<p>
+	</ul>
+	Свяжитесь с нами для записи на пробное занятие: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, телефон:&nbsp;+7&nbsp;915&nbsp;399-99-49
+</section>
+<footer>
+	Электронная почта: <a href="mailto:mail@majorschool.ru">mail@majorschool.ru</a>, <br>
+	Телефон: +7&nbsp;915&nbsp;399-99-49 <br>
+	© 2013 Школа музыки для взрослых и детей «Мажор»
+</footer>
 </body>
 </html>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-43843367-1', 'majorschool.ru');
   ga('send', 'pageview');
-
 </script>
-
 <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22251553 = new Ya.Metrika({id:22251553, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22251553" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
